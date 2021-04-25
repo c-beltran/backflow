@@ -1353,6 +1353,10 @@ input, select, textarea {
 				.row > .col-12-narrower {
 					width: 100%;
 				}
+				/*left-side*/
+				#left-side-form{
+					padding-left: 0px;
+				}
 
 				.row > .off-12-narrower {
 					margin-left: 100%;
@@ -1999,6 +2003,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2723,6 +2728,10 @@ input, select, textarea {
 			background: #fff;
 		}
 
+		.wrapper.discount {
+			background: lightcyan;
+		}
+
 		.wrapper.style2 {
 			background-color: #fff;
 			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
@@ -2732,7 +2741,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #37c0fb;
+			/* background-color: #37c0fb; */
+			background-color: rgb(73, 73, 73);
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -3218,6 +3228,12 @@ input, select, textarea {
 
 	@media screen and (max-width: 840px) {
 
+		/*payment*/
+		#payment-img{
+			width: 400px;
+			height: 51px;
+		}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3301,6 +3317,17 @@ input, select, textarea {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+
+		/*payment*/
+		#payment-img{
+			width: 300px;
+			height: 41px;
+		}
+
+		/*padding*/
+		#left-side-form{
+			padding-left: 30px;
+		}
 
 		/* Icon */
 
@@ -3406,3 +3433,7 @@ input, select, textarea {
 		font-size: 40px;
 		color: #f7f7f7;
 	}
+
+	/* #left-side-form{
+		padding-left: 0px;
+	} */
