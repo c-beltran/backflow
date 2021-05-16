@@ -3234,6 +3234,10 @@ input, select, textarea {
 			height: 51px;
 		}
 
+		#content iframe{
+			width: 350px;
+		}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3323,6 +3327,11 @@ input, select, textarea {
 			width: 300px;
 			height: 41px;
 		}
+
+		section #content iframe{
+			width: 550px;
+		}
+
 
 		/*padding*/
 		#left-side-form{
