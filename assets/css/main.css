@@ -2109,6 +2109,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.image.featured.contact img {
+				width: auto;
+			}
+
 /* Icon */
 
 	.icon {
@@ -2839,6 +2843,11 @@ input, select, textarea {
 
 	@media screen and (max-width: 1280px) {
 
+		/*contact img*/
+		.image.featured.contact img {
+			width: auto;
+		}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2922,6 +2931,11 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 840px) {
+
+		/*contact img*/
+		.image.featured.contact img {
+			width: auto;
+		}
 
 		/* Basic */
 
@@ -3234,6 +3248,11 @@ input, select, textarea {
 			height: 51px;
 		}
 
+		/*contact img*/
+		.image.featured.contact img {
+			width: auto;
+		}
+
 		#content iframe{
 			width: 350px;
 		}
@@ -3421,7 +3440,13 @@ input, select, textarea {
 			#footer {
 				padding: 2em 20px;
 				text-align: left;
-			}	
+			}
+			
+		/* img contact */
+
+		.image.featured.contact img {
+			width: 100%;
+		}
 	}
 
 /* My CSS */
