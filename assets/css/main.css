@@ -178,7 +178,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 0.5em #e0e0e0;
+		border-left: solid 0.5em #474747;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -200,6 +200,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			/*payment*/
+		#payment-img{
+			width: 600px;
+			height: 100px;
+		}
 
 			.container {
 				width: 960px;
@@ -3343,8 +3349,8 @@ input, select, textarea {
 
 		/*payment*/
 		#payment-img{
-			width: 300px;
-			height: 41px;
+			width: 350px;
+			height: 65px;
 		}
 
 		section #content iframe{
@@ -3475,6 +3481,89 @@ input, select, textarea {
 		margin: 0;
 	}
 
-		#top .image img {
-			border-radius: 100%;
-		}
+	#top .image img {
+		border-radius: 100%;
+	}
+
+	/* Review seciton CSS */
+
+	#google-reviews {
+		background-color: lightcyan;
+		color: #333;
+		padding: 4rem 1rem;
+	}
+
+	#google-reviews h2 {
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: #004d4d;
+	}
+
+	.swiper {
+		padding: 2rem 0;
+	}
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	blockquote {
+		background: white;
+		border-left: 5px solid #00b3b3;
+		border-radius: 8px;
+		padding: 1.5rem;
+		max-width: 700px;
+		margin: 0 auto;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+		font-style: italic;
+		transition: transform 0.3s ease;
+	}
+
+	blockquote:hover {
+		transform: scale(1.02);
+	}
+
+	blockquote p {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	blockquote a {
+		color: #004d4d;
+		text-decoration: none;
+	}
+
+	blockquote a:hover {
+		text-decoration: underline;
+	}
+
+	blockquote footer {
+		text-align: right;
+		color: #004d4d;
+	}
+
+	.star-rating {
+		color: gold;
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+	}
+
+	.see-more-reviews-btn {
+		display: inline-block;
+		background-color: #00b3b3;
+		color: white;
+		padding: 0.75rem 1.5rem;
+		font-weight: bold;
+		border-radius: 30px;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+	}
+
+	.see-more-reviews-btn:hover {
+		background-color: #008080;
+	}
