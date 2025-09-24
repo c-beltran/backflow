@@ -48,11 +48,18 @@
 			background-color: #ccc; 
 		}
 
+		.accordion.active + .panel {
+			/* Use max-height for a smooth transition */
+			max-height: 500px; /* Adjust as needed */
+		}
+
 		.panel {
 			padding: 0 18px;
-			display: none;
 			background-color: white;
 			overflow: hidden;
+			/* Transition for smooth accordion effect */
+			max-height: 0;
+			transition: max-height 0.2s ease-out;
 		}
 	</style>
 	<body class="is-preload">
@@ -358,12 +365,9 @@
 				for (i = 0; i < acc.length; i++) {
 				  acc[i].addEventListener("click", function() {
 					this.classList.toggle("active");
-					var panel = this.nextElementSibling;
-					if (panel.style.display === "block") {
-					  panel.style.display = "none";
-					} else {
-					  panel.style.display = "block";
-					}
+					var panel = this.nextElementSibling; // The .panel
+					// The CSS will handle showing/hiding the panel
+					// based on the .active class on the accordion button.
 				  });
 				}
 				</script>

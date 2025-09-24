@@ -1,4 +1,21 @@
+# Allow all content to be crawled by default by most crawlers
 User-agent: *
-Disallow:
+Allow: /
+
+# Block specific AI and data-scraping crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
 
 Sitemap: https://backflowfriends.com/sitemap.xml
